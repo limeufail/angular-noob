@@ -1,0 +1,124 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.news-list-wrapper{
+	display: flex;
+	flex-flow: column wrap;
+}
+.news-item{
+	display: flex;
+    flex-flow: row nowrap;
+    flex: 1;
+    margin: 5px;
+}
+
+.news-item-photo{ padding-right: 35px;  }
+
+.news-item-content { 
+	display: flex; 
+	flex-flow: column wrap;
+}
+.news-item-content h2,
+.news-item-content a{
+	text-decoration: none;
+}
+.news-view-wrapper .news-item{
+	display: flex;
+	flex-flow: column wrap;
+}
+.news-view-wrapper .news-item-photo img{
+    height: auto;
+    width: 350px;
+}
+/* control style */
+.btn{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn-blue{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-blue:hover{
+	color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.btn-default{
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default:hover{
+	color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-danger{
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-danger:hover{
+	color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.img-thumbnail{
+	display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+.form-control {
+    display: block;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+textarea.form-control{
+	height: 100px;
+    width: 350px;
+}

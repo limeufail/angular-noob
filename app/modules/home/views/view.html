@@ -1,0 +1,12 @@
+<a class="btn btn-blue" href="#/edit/{{newslist_id}}"><i class="glyphicon glyphicon-plus"></i>&nbsp;Edit</a>
+<div class="news-view-wrapper">
+	<div class="news-item" ng-repeat="data in newslist">
+	    <div class="news-item-photo"><img src="{{data.news_photo}}" /></div>
+	    <div class="news-item-content">
+		    <div><h1>{{data.news_title}}</h1></div>
+		    <div><i>{{data.news_date}}</i></div>
+		    <div><i>Category: </i>{{data.category_name}}</v>
+		    <div>{{data.news_content }}</div>
+	    </div>
+	</div>
+</div>

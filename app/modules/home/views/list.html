@@ -1,0 +1,14 @@
+<a class="btn btn-blue" href="#/edit/0">Add New</a>
+<a class="btn btn-default" href="#/login">Logout</a>
+<div class="news-list-wrapper">
+	<div class="news-item" ng-repeat="data in list">
+	    <div class="news-item-photo"><img class="img-thumbnail" src="{{data.news_photo}}" /></div>
+	    <div class="news-item-content">
+		    <div><a href="#/view/{{data.news_id}}"><h2>{{data.news_title}}</h2></a></div>
+		    <div><i>{{data.news_date}}</i></div>
+		    <div><i>Category: </i>{{data.category_name}}</v>
+		    <div>{{data.news_content | wordLimit : 50 }}</div>
+		    <div><a href="#/view/{{data.news_id}}" class="btn">&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp; ...Read more</a></div>
+	    </div>
+	</div>
+</div>
